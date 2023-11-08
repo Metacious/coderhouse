@@ -8,3 +8,6 @@ class Familiar(models.Model):
     fecha_nacimiento = models.DateField(null=True, blank=True)
     rut = models.IntegerField(max_length=16, null=True, blank=True)
 
+    def __str__(self):
+        return f"{self.nombre}, {self.nombre}, {self.parentezco_conmigo}"
+
